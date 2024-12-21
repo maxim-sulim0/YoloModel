@@ -17,8 +17,7 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "maxim-sulim" => "cool.sulim@gmail.com" }
   spec.platform     = :ios, "13.0"
-  spec.source       = { :http => 'file:' + __dir__ + "/" }
-  # spec.source       = { :git => "https://github.com/YOUR_ACCOUNT/YOUR_REPO.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/maxim-sulim0/YoloModel.git", :tag => "#{spec.version}" }
   spec.source_files = "YoloModel/Source/*.{swift}"
   spec.swift_version = "6.0"
 end
