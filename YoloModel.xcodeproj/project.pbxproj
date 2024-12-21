@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		AB2299BB2D16E2E800D9CC51 /* YoloModel.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2299BA2D16E2E800D9CC51 /* YoloModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB2299C92D16E3E700D9CC51 /* YOLO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2299C82D16E3E700D9CC51 /* YOLO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AB2299B72D16E2E800D9CC51 /* YoloModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YoloModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB2299BA2D16E2E800D9CC51 /* YoloModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YoloModel.h; sourceTree = "<group>"; };
+		AB2299C82D16E3E700D9CC51 /* YOLO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YOLO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,9 +47,18 @@
 		AB2299B92D16E2E800D9CC51 /* YoloModel */ = {
 			isa = PBXGroup;
 			children = (
+				AB2299C72D16E3CD00D9CC51 /* Source */,
 				AB2299BA2D16E2E800D9CC51 /* YoloModel.h */,
 			);
 			path = YoloModel;
+			sourceTree = "<group>";
+		};
+		AB2299C72D16E3CD00D9CC51 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				AB2299C82D16E3E700D9CC51 /* YOLO.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +104,7 @@
 				TargetAttributes = {
 					AB2299B62D16E2E800D9CC51 = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 					};
 				};
 			};
@@ -129,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB2299C92D16E3E700D9CC51 /* YOLO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +277,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -275,6 +289,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -286,8 +301,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = maxx.YoloModel;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,6 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -308,6 +329,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,6 +341,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = maxx.YoloModel;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
