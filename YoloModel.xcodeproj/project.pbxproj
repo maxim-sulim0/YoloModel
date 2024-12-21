@@ -9,16 +9,16 @@
 /* Begin PBXBuildFile section */
 		AB2299BB2D16E2E800D9CC51 /* YoloModel.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2299BA2D16E2E800D9CC51 /* YoloModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB2299C92D16E3E700D9CC51 /* YOLO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2299C82D16E3E700D9CC51 /* YOLO.swift */; };
-		AB2299EA2D17182700D9CC51 /* Yolov3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AB2299E92D17182700D9CC51 /* Yolov3.mlmodel */; };
 		AB2299EC2D17189B00D9CC51 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2299EB2D17189B00D9CC51 /* Helper.swift */; };
+		AB2299F82D171E0000D9CC51 /* Yolov3.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = AB2299F72D171E0000D9CC51 /* Yolov3.mlpackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AB2299B72D16E2E800D9CC51 /* YoloModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YoloModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB2299BA2D16E2E800D9CC51 /* YoloModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YoloModel.h; sourceTree = "<group>"; };
 		AB2299C82D16E3E700D9CC51 /* YOLO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YOLO.swift; sourceTree = "<group>"; };
-		AB2299E92D17182700D9CC51 /* Yolov3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Yolov3.mlmodel; path = ../../../../../Yolov3.mlmodel; sourceTree = "<group>"; };
 		AB2299EB2D17189B00D9CC51 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		AB2299F72D171E0000D9CC51 /* Yolov3.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = Yolov3.mlpackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 		AB2299C72D16E3CD00D9CC51 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				AB2299E92D17182700D9CC51 /* Yolov3.mlmodel */,
+				AB2299F72D171E0000D9CC51 /* Yolov3.mlpackage */,
 				AB2299C82D16E3E700D9CC51 /* YOLO.swift */,
 				AB2299EB2D17189B00D9CC51 /* Helper.swift */,
 			);
@@ -147,9 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB2299EA2D17182700D9CC51 /* Yolov3.mlmodel in Sources */,
 				AB2299C92D16E3E700D9CC51 /* YOLO.swift in Sources */,
 				AB2299EC2D17189B00D9CC51 /* Helper.swift in Sources */,
+				AB2299F82D171E0000D9CC51 /* Yolov3.mlpackage in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
